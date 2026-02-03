@@ -6,8 +6,26 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { Nav } from "@/components/Nav";
 
 export const metadata: Metadata = {
-  title: "Open Sauce - Recipe Blog",
-  description: "Delicious recipes for home cooks",
+  title: "PostHog's Open Sauce",
+  description: "Recipes our colleagues swear by",
+  openGraph: {
+    title: "PostHog's Open Sauce",
+    description: "Recipes our colleagues swear by",
+    images: [
+      {
+        url: "/images/chef-hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "PostHog's Open Sauce",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PostHog's Open Sauce",
+    description: "Recipes our colleagues swear by",
+    images: ["/images/chef-hero.jpg"],
+  },
 };
 
 export default function RootLayout({
