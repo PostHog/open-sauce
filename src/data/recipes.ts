@@ -162,7 +162,7 @@ export const recipes: Recipe[] = [
   },
   {
     slug: "white-bean-dip",
-    title: "White BEan Dip",
+    title: "White Bean Dip",
     intro:
       "It's a dip made from beans. Trust me, it is 100x better than it sounds",
     image: "/images/white-bean-dip.jpg",
