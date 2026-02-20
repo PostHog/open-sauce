@@ -160,7 +160,6 @@ export const recipes: Recipe[] = [
       "Cook at 180°C for 20 minutes or until golden brown.",
     ],
   },
-];
   {
     slug: "white-bean-dip",
     title: "White BEan Dip",
