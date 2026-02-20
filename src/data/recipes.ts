@@ -170,7 +170,7 @@ export const recipes: Recipe[] = [
     title: "White Bean Dip",
     intro:
       "It's a dip made from beans. Trust me, it is 100x better than it sounds",
-    image: "/images/white-bean-dip.jpg",
+    image: "/images/white-bean-dip.png",
     author: authors.chris_m,
     prepTime: "10 mins",
     cookTime: "0 mins",
