@@ -161,7 +161,33 @@ export const recipes: Recipe[] = [
     ],
   },
 ];
-
+  {
+    slug: "white-bean-dip",
+    title: "White BEan Dip",
+    intro:
+      "It's a dip made from beans. Trust me, it is 100x better than it sounds",
+    image: "/images/white-bean-dip.jpg",
+    author: authors.chris,
+    prepTime: "10 mins",
+    cookTime: "0 mins",
+    servings: 4,
+    ingredients: [
+      "1.5 cups cooked cannellini beans",
+      "2 tbsp extra-virgin olive oil",
+      "2 tbsp fresh lemon juice",
+      "1 garlic clove",
+      "1/2 tsp salt",
+      "2 tbsp torn basil leaves",
+      "2 tbsp chopped fresh rosemary",
+      "2 - 4 tbsp water",
+    ],
+    method: [
+      "Put all the ingredients in a food processor, pulse until smooth.",
+      "gradually thin with water until smooth",
+      "*note* You'll be tempted to add more garlic, because we all love garlic and 1 clove isn't enough. You probably shouldn't do this.",
+      "Pureed garlic is strong, and it gets stronger as you let the dip rest.",
+  },
+];
 export function getRecipeBySlug(slug: string): Recipe | undefined {
   return recipes.find((recipe) => recipe.slug === slug);
 }
