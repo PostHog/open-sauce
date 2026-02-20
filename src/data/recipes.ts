@@ -25,6 +25,11 @@ const authors = {
     imageUrl:
       "https://res.cloudinary.com/dmukukwp6/image/upload/v1688575125/paul_64ee2de98e.png",
   },
+  chris_m:{
+    name:"Chris McNeill",
+    profileUrl: "https://posthog.com/community/profiles/33534",
+    imageUrl: "https://res.cloudinary.com/dmukukwp6/image/upload/v1748970836/chris_45304857bb.png",
+  }
 } as const;
 
 export const recipes: Recipe[] = [
@@ -160,8 +165,34 @@ export const recipes: Recipe[] = [
       "Cook at 180°C for 20 minutes or until golden brown.",
     ],
   },
+  {
+    slug: "white-bean-dip",
+    title: "White Bean Dip",
+    intro:
+      "It's a dip made from beans. Trust me, it is 100x better than it sounds",
+    image: "/images/white-bean-dip.jpg",
+    author: authors.chris_m,
+    prepTime: "10 mins",
+    cookTime: "0 mins",
+    servings: 4,
+    ingredients: [
+      "1.5 cups cooked cannellini beans",
+      "2 tbsp extra-virgin olive oil",
+      "2 tbsp fresh lemon juice",
+      "1 garlic clove",
+      "1/2 tsp salt",
+      "2 tbsp torn basil leaves",
+      "2 tbsp chopped fresh rosemary",
+      "2 - 4 tbsp water",
+    ],
+    method: [
+      "Put all the ingredients in a food processor, pulse until smooth.",
+      "gradually thin with water until smooth",
+      "*note* You'll be tempted to add more garlic, because we all love garlic and 1 clove isn't enough. You probably shouldn't do this.",
+      "Pureed garlic is strong, and it gets stronger as you let the dip rest.",
+    ]
+  },
 ];
-
 export function getRecipeBySlug(slug: string): Recipe | undefined {
   return recipes.find((recipe) => recipe.slug === slug);
 }
