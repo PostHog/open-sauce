@@ -185,6 +185,7 @@ export const recipes: Recipe[] = [
       "gradually thin with water until smooth",
       "*note* You'll be tempted to add more garlic, because we all love garlic and 1 clove isn't enough. You probably shouldn't do this.",
       "Pureed garlic is strong, and it gets stronger as you let the dip rest.",
+      ]
   },
 ];
 export function getRecipeBySlug(slug: string): Recipe | undefined {
